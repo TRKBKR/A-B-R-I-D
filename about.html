@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="test.css">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="common/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+
+
+<body>
+
+<div class="app-wrapper">
+
+<nav class="main-menu">
+<a href="#">Something</a>
+<a href="#">Something</a>
+<a href="#">Something</a>
+</nav><!--#main-menu-->
+
+<header>
+<div id="sad" style="display:none;width: 40px;" class="main-menu-button main-menu-button-left"><a href="dashboard.php"><button style="background: transparent;border: 0;width: 100%;height: 100%;color: orange;font-size: 30px;"class="fa fa-home"></button></a></div>
+<div class="main-menu-button main-menu-button-right"><a><button class="logo btn"></button></a></div>
+<h1 style="	font-family: Nunito;letter-spacing: 15px;font-size: 170%;top: 14px;right: 15px;">ABRID</h1>
+
+</header>
+
+<div class="app-content">
+
+<section>
+    <div class="content">
+        <center>
+        <div id=ar style="text-align: center;font-size: 120%;padding: 0px 10px 0px 0px;">
+<strong><b style="color:black">
+		أبريد </b></strong>
+
+   هي خدمة مشاركة ركوب مصممة خصيصًا لطلاب الجامعات  كحل مبدئي للنقل عالي السعر وأيضًا بالنسبة لأولئك الذين لا يستطيعون العثور على رحلة خلال العطلات وكذا للأشخاص اللذين يسافرون وحدهم ويجدون تمن البنزين مرتفعا<br><br>
+   
+ آمنة: نستخدم رقم البطاقة الوطنية  ورقم الهاتف في التسجيل<br>
+
+ ممتعة: مع أبريد ، يمكنك التعرف على أشخاص من مختلف المدن<br>
+ فعاله من حيث التكلفه  : أرخص بكثير من الخدمات المماثلة الأخرى<br>
+</div>
+          	<br>
+
+        
+	<br><br><br>
+    </div><!-- .content -->
+</section>
+
+</div><!--#app-content-->
+
+<center style="bottom: 0;width: 100%;position: absolute;right: 0;">
+        <div id=log style="display: block;"></div>
+</center>
+</div><!--#app-wrapper-->
+
+
+</body>
+
+<script>
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+} 
+        x='<a href="login.html"><button class="log" style="width: 50%;margin:0;height: 50;border-radius: 0;background:#f8a61b;color:black" >LOG IN</button></a><a href="signup.html"><button class="log" style="width: 50%;margin:0;height: 50;border-radius: 0;background:#000;color:#f8a61b" >SIGN UP</button></a>';
+f='';
+var username=getCookie("u");
+ if (username =="") {document.all["log"].innerHTML=x;}
+ else{document.all["sad"].style.display="block";document.all["log"].innerHTML=f;}
+ </script>
+
+<!-- Tarik Bakir :\) --\>

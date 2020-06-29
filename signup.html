@@ -1,0 +1,152 @@
+<link rel="stylesheet" href="test.css">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+<link rel="stylesheet" href="log.css">
+<link rel="stylesheet" href="common/font-awesome/css/font-awesome.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1">
+<style>
+button:active{
+    background:#f8a61b;
+}
+</style>
+<body>
+
+<div class="app-wrapper">
+
+<nav class="main-menu">
+<a href="#">Something</a>
+<a href="#">Something</a>
+<a href="#">Something</a>
+</nav><!--#main-menu-->
+
+<header>
+<div class="main-menu-button main-menu-button-left"><a href="dashboard.php"><button class="fa fa-arrow-left btn"  style="color:#f8a61b;font-size: 20px;" ></button></a></div>
+
+<div class="main-menu-button main-menu-button-right"><a href="#"><button class="logo btn"></button></a></div>
+<h1 style="letter-spacing: 15px;">SIGN UP</h1>
+</header>
+
+<div class="app-content">
+
+<section>
+    <div class="content">
+        <center>
+          	<img src="common/images/icons/log.svg" style="width: 25%;height:25%">
+
+<div id="er" ></div>
+		<div id="login_error" style="display:none;"></div>
+
+		<table style="width:100%;"><td >
+			<input class="fuu" id=name style="width:100%;"placeholder="First Name" type='text'></td><td>
+			<input   class="fuu" id=last style="width:100%;" placeholder="Last Name" type='text'>
+			</td>
+		</table>
+		<br>
+
+		<input  class="fuu" id=email placeholder="E-mail" type='email'>
+		<br><br>
+		<input  class="fuu" id=pas placeholder="Password" type='password'>
+		<br><br>
+		<input  class="fuu" id=pasc placeholder="Confirm Password" type='password'>
+		<br><br>
+		<input  class="fuu" id=num placeholder="Phone Number" type='text'>
+		<br><br>
+	
+		<input  class="fuu" id=cart placeholder="CIN" type='text'>
+		<br><br><br><br>
+		<table style="width:100%;" ><td >
+		<input id=sec  class="fuu" style="width:100%;"p type='hidden' value=1 >
+		  <!--  <option value="1">الأغنية المفضلة</option>
+		    <option value="2">الفيلم المفضل</option>
+		    <option value="3">الإسم العائلي للأم</option>
+		    <option value="4">نوع الهاتف المفضل</option>
+
+
+
+
+		</select> --></td><td>
+		<input  id=seca class="fuu"  style="width:100%;" placeholder="Answer" type='hidden' value=1>
+		</td></table>
+		
+		<button onclick="hell()" class="sub">Submit</button>
+	
+    </div><!-- .content -->
+</section>
+
+</div><!--#app-content-->
+</div><!--#app-wrapper-->
+
+
+</body>
+
+
+
+
+
+
+<script src="common/js/jQuery2.0.2.min.js"></script>
+<script>
+function isValidEmailAddress(emailAddress) {
+			var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+			return pattern.test(emailAddress);
+		}
+function hell(){
+	name=document.all["name"].value;
+	last=document.all["last"].value;
+	email=document.all["email"].value;
+	pas=document.all["pas"].value;
+	pasc=document.all["pasc"].value;
+	num=document.all["num"].value;
+	cart=document.all["cart"].value;
+	sec=document.all["sec"].value;
+	seca=document.all["seca"].value;
+
+	var d=0;
+	var points=[name,last,email,pas,pasc,num,cart,sec,seca];
+	for(var i = 0; i < points.length; i++) {
+		if (points[i].length == 0){
+		ri("Field Is Empty");
+		d=d+1;
+		break;}
+	}
+	if (!(pas == pasc)){ri('Incorrect Password');d=d+1}
+	if (!isValidEmailAddress(email)){ri('Incorrect Email');d=d+1}
+	if (!phonenumber(document.all["num"])){ri('Incorrect Phone Number');d=d+1}
+
+	if(pas.length < 6){ri('Small Password');d=d+1}
+	if (d == 0){
+		document.all["login_error"].style.display="none";
+		$.ajax({
+			type: 'POST',
+			url: 'signup.php',
+	       	 	//async: true,
+			data:{"data":points},
+		       	success:function fuck(kill){
+				var html="<h1 class='ll'>"+kill+"</h1>";
+				document.all["er"].innerHTML=html;
+				var fil="file/file.php?email="+email;
+				if ("User Registered Successfully"==kill){document.all["er"].innerHTML='';window.location=fil;}
+			}
+		})
+	}
+	
+}
+function ri(text){
+	x="<strong>ERROR</strong>:"+text+".<br>";
+	document.all["login_error"].innerHTML=x;
+	document.all["login_error"].style.display="block";
+}
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if((inputtxt.value.match(phoneno)))
+        {
+      return true;
+        }
+      else
+        {
+        return false;
+        }
+}
+</script>
+<!-- Tarik Bakir :\) --\>

@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+    margin: 0;
+    padding: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 0;
+    font: inherit;
+        font-size: inherit;
+        font-family: inherit;
+    font-size: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+* {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+button{
+    outline:none;
+}
+button:focus{
+       outline:none;
+}
+button:active{
+       outline:none;
+}
+
+a{
+    outline:none;
+}
+a:focus{
+       outline:none;
+}
+a:active{
+       outline:none;
+}
+
+
+.log {
+    border: 0;
+    height: auto;
+    border-radius: 3px;
+    margin-right: 1px;
+    width: 45%;
+    font-size: 150%;
+    color:white;
+}
+.log:hover{color:yellow;}
+
+html, body {
+    font-family: "Helvetica",sans-serif;
+    font-size: 14px;
+    color: #666;
+    height: 100%;
+    overflow-x: hidden;
+}
+.app-wrapper {
+    -webkit-transition-property: left;
+    -moz-transition-property: left;
+    -o-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    display: block;
+    position: absolute;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #597f86;
+    z-index: 9;
+}
+nav.main-menu a {
+
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 185%;
+
+    text-decoration: none;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    border-bottom: 1px dotted white;
+
+}
+a {
+
+    color: #666;
+    text-decoration: none;
+
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58.5px;
+    background: #181818;
+    z-index: 10;
+    color:#f8a61b;
+}
+header .main-menu-button.main-menu-button-left {
+
+    left: 15px;
+
+}
+header .main-menu-button {
+
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 28.5px;
+    height: 28.5px;
+    z-index: 2;
+
+}
+.btn {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    background-color: transparent;
+
+}
+.left-arrow {
+
+    background-image: url("common//images/icons/left-arrow-white.png");
+    background-size: 19.5px 28.5px;
+
+}
+.gear {
+
+    background-image: url("common//images/icons/gear-white.png");
+    background-size: 28.5px 28.5px;
+
+}
+.logo {
+    background-image:url("common//images/icons/log.svg");
+    background-size: 28.5px 28.5px;
+}
+header .main-menu-button.main-menu-button-right {
+
+    right: 15px;
+
+}
+header h1 {
+
+
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+
+}
+h1 {
+
+    font-size: 185%;
+    font-weight: bold;
+
+
+}
+.app-content {
+
+    display: block;
+    position: relative;
+    min-height: 100%;
+    padding-top: 58.5px;
+    z-index: 1;
+
+}
+.content {
+
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+<!-- Tarik Bakir :\) --\>
