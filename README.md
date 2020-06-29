@@ -8,7 +8,7 @@ I didn't Actually Know What To write Here So :
 ## Idea 
 I had to go To My Home During Public transportation strike
 I didn't And I Don't Have Money To Buy A Domain
-so [free subdomain](abrid.scienceontheweb.net)
+so [free subdomain link](http://abrid.scienceontheweb.net)
 
 <table>
   <tr>
