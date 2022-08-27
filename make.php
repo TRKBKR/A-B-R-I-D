@@ -6,7 +6,7 @@ if (isset($data)){
 	$from=clean($data[0],$conn);
 	$to=clean($data[1],$conn);
 	$type=clean($data[2],$conn);
-	$date=$data[3];
+	$date=clean($data[3]);
 	$desc=clean($data[4],$conn);
 	$gender=clean($data[5],$conn);
 
