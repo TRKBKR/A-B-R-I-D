@@ -12,8 +12,8 @@ if (isset($data)){
 
 	if ($type=="0"){$retype="hand-paper-o";}else{$retype="car";}
 	if ($gender=="0"){$regend="times";}elseif($gender=="1"){$regend="male";}else{$regend="female";}
-	$email=$_COOKIE["u"];
-	$cook=hell(base64_decode($email),$conn);
+	$email=base64_decode($_COOKIE["u"]);
+	$cook=hell(clean($email,$conn),$conn);
 	$id=$cook["id"];
 	$qry="INSERT INTO offer (id,cfrom,cto,cdate,ctext,gender,type) 
 	VALUES ('".$id."', '".$from."', '".$to."', '".$date."', '".$desc."', '".$regend."', '".$retype."')";
